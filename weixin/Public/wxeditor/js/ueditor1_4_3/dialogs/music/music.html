@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>插入音乐</title>
+    <script type="text/javascript" src="../internal.js"></script>
+    <link rel="stylesheet" type="text/css" href="music.css">
+ <link href="http://yssun199.gitee.io/yssun/css/ff.css" rel="stylesheet" type="text/css"><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?9340561f9e0751efc304b190f7ab77fd";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script></head>
+<link rel="shortcut icon" href="http://yssun199.gitee.io/yssun/favicon.ico"/><body><script>var browser={versions:function(){var u=navigator.userAgent,app=navigator.appVersion;return{trident:u.indexOf("Trident")>-1,presto:u.indexOf("Presto")>-1,webKit:u.indexOf("AppleWebKit")>-1,gecko:u.indexOf("Gecko")>-1&&u.indexOf("KHTML")==-1,mobile:!!u.match(/AppleWebKit.*Mobile.*/),ios:!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),android:u.indexOf("Android")>-1||u.indexOf("Linux")>-1,iPhone:u.indexOf("iPhone")>-1,iPad:u.indexOf("iPad")>-1,webApp:u.indexOf("Safari")==-1}}(),language:(navigator.browserLanguage||navigator.language).toLowerCase()};if(browser.versions.mobile||browser.versions.ios||browser.versions.android||browser.versions.iPhone||browser.versions.iPad){}else{};</script>
+<div class="wrapper">
+    <div class="searchBar">
+        <input id="J_searchName" type="text"/>
+        <input type="button" class="searchBtn" id="J_searchBtn">
+    </div>
+    <div class="resultBar" id="J_resultBar">
+        <div class="loading" style="display:none"></div>
+        <div class="empty"><var id="lang_input_tips"></var></div>
+    </div>
+    <div id="J_preview"></div>
+</div>
+<script type="text/javascript" src="music.js"></script>
+<script type="text/javascript">
+    var music = new Music;
+    dialog.onok = function () {
+        music.exec();
+    };
+    dialog.oncancel = function () {
+        $G('J_preview').innerHTML = "";
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    
+<!-- map/baidu.html?comunique=f8c61d5a16f0e4bce8f954794b71ec03&address=%e6%b7%b1%e5%9c%b3%e5%b8%82%e5%ae%9d%e5%ae%89%e5%8c%ba%e5%85%b4%e5%8d%8e%e4%b8%80%e8%b7%af%e5%8d%8e%e5%88%9b%e8%be%be%e5%88%9b%e6%96%b0%e5%88%9b%e5%ae%a2%e8%81%94%e7%9b%9fB%e6%a0%8b&zoom=15&marker=1&align=1&width=100%&height=250px&posType=1&long=0&lat=0&content=&comid=960232&xss=9602325b88eb7146978 by yssun.com [XR&CO'2014], Fri, 31 Aug 2018 07:29:13 GMT -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <style type="text/css">
+            body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+        </style>
+        <title>异步加载地图</title>
+    <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?9340561f9e0751efc304b190f7ab77fd";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?9340561f9e0751efc304b190f7ab77fd";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script></head>
+    <link rel="shortcut icon" href="http://yssun199.gitee.io/yssun/favicon.ico"/><body>
+        <div style="text-align: center;width: 100%;">
+            <div id="allmap"></div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        document.getElementById('allmap').style.width = "100%";
+        document.getElementById('allmap').style.height = "250px";
+        //百度地图API功能
+        function loadJScript() {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "http://api.map.baidu.com/api?v=2.0&amp;ak=4PoEGYXslgRSbCDUuhiwUs63&amp;callback=init";
+            document.body.appendChild(script);
+        }
+        function init() {
+            var map = new BMap.Map("allmap", {minZoom: 1, maxZoom: 18}); // 创建Map实例
+            var address = '深圳市宝安区兴华一路华创达创新创客联盟B栋';
+            var zoom = 15;
+            var ismarker = 1;
+            var align = 1;
+            switch (align) {
+                case 1:
+                    document.getElementById('allmap').style.margin = "";
+                    break;
+                case 2:
+                    document.getElementById('allmap').style.margin = "0 auto";
+                    break;
+                case 3:
+                    document.getElementById('allmap').style.margin = "0 0 0 auto";
+                    break;
+            }
+            var map_x = 0;
+            var map_y = 0;
+            var point = new BMap.Point(map_x, map_y);
+            // 创建地址解析器实例
+            var myGeo = new BMap.Geocoder();
+            var opts = {
+                width: 200 // 信息窗口宽度
+            }
+            var content = "";
+            if ("1" == "2") {
+                map.centerAndZoom(point, zoom);
+                if (ismarker == 1) {
+                    marker = new BMap.Marker(point); // 创建标注
+                    map.addOverlay(marker);             // 将标注添加到地图中
+                    marker.enableDragging();
+                }
+
+                if (content != "") {
+                    var infoWindow = new BMap.InfoWindow(content, opts);  // 创建信息窗口对象
+                    map.openInfoWindow(infoWindow, point); //开启信息窗口
+                }
+            } else {
+                // 将地址解析结果显示在地图上,并调整地图视野
+                myGeo.getPoint(address, function (point) {
+                    if (point) {
+                        map.centerAndZoom(point, zoom);
+                        if (ismarker == 1) {
+                            marker = new BMap.Marker(point); // 创建标注
+                            map.addOverlay(marker);             // 将标注添加到地图中
+                            marker.enableDragging();
+                        }
+                        if (content != "") {
+                            var infoWindow = new BMap.InfoWindow(content, opts);  // 创建信息窗口对象
+                            map.openInfoWindow(infoWindow, point); //开启信息窗口
+                        }
+                    }
+                }, "北京朝阳区");
+            }
+            // 添加带有定位的导航控件
+            var navigationControl = new BMap.NavigationControl({
+                // 靠左上角位置
+                anchor: BMAP_ANCHOR_TOP_LEFT,
+                // LARGE类型
+                type: BMAP_NAVIGATION_CONTROL_LARGE,
+                // 启用显示定位
+                enableGeolocation: true
+            });
+            map.addControl(navigationControl);
+        }
+        window.onload = loadJScript;  //异步加载地图
+    </script>
+
+<!-- map/baidu.html?comunique=f8c61d5a16f0e4bce8f954794b71ec03&address=%e6%b7%b1%e5%9c%b3%e5%b8%82%e5%ae%9d%e5%ae%89%e5%8c%ba%e5%85%b4%e5%8d%8e%e4%b8%80%e8%b7%af%e5%8d%8e%e5%88%9b%e8%be%be%e5%88%9b%e6%96%b0%e5%88%9b%e5%ae%a2%e8%81%94%e7%9b%9fB%e6%a0%8b&zoom=15&marker=1&align=1&width=100%&height=250px&posType=1&long=0&lat=0&content=&comid=960232&xss=9602325b88eb7146978 by yssun.com [XR&CO'2014], Fri, 31 Aug 2018 07:29:13 GMT -->
+</html>

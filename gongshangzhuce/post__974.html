@@ -1,0 +1,1183 @@
+﻿﻿﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>金蝶操作教程之五①——报表函数_深圳市宇顺企业管理咨询有限公司(宇顺财务)_www.yssun.com</title>
+	<meta name="keywords" content="金蝶操作教程之五①——报表函数,13723799805,www.yssun.com" />
+	<meta name="description" content="金蝶操作教程之五①——报表函数" />
+	<link href="../templets/yssun/css/style.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="http://yssun199.gitee.io/yssun/favicon.ico"/>
+	
+	<script type="text/javascript" src="../templets/yssun/js/jquery.js"></script>
+	<link href="../css/dedejs.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script><script type="text/javascript" src="../js/dedejs.js"></script>
+	<style>
+	.subject-biaoqian {
+    padding: 20px 0 5px 0;
+    background-color: #fff;
+}
+.clearfix {
+    display: block;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.w_1200 {
+    width: 800px;
+    margin: 0 auto;
+}
+.subject-biaoqian li {
+    width: 196px;
+    float: left;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+li {
+    list-style: none;
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+}
+.lover22 {
+    width: 800px;
+    margin-top: 10px;
+    float: left;
+    border: 1px solid #e4e4e4;
+}
+pre {
+white-space: pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -pre-wrap;
+white-space: -o-pre-wrap;
+*word-wrap: break-word;
+*white-space : normal ;  
+}
+	</style>
+
+ <link href="http://yssun199.gitee.io/yssun/css/ff.css" rel="stylesheet" type="text/css">
+<script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?9340561f9e0751efc304b190f7ab77fd";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script></head>
+
+
+<link rel="shortcut icon" href="http://yssun199.gitee.io/yssun/favicon.ico"/><body><script>var browser={versions:function(){var u=navigator.userAgent,app=navigator.appVersion;return{trident:u.indexOf("Trident")>-1,presto:u.indexOf("Presto")>-1,webKit:u.indexOf("AppleWebKit")>-1,gecko:u.indexOf("Gecko")>-1&&u.indexOf("KHTML")==-1,mobile:!!u.match(/AppleWebKit.*Mobile.*/),ios:!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),android:u.indexOf("Android")>-1||u.indexOf("Linux")>-1,iPhone:u.indexOf("iPhone")>-1,iPad:u.indexOf("iPad")>-1,webApp:u.indexOf("Safari")==-1}}(),language:(navigator.browserLanguage||navigator.language).toLowerCase()};if(browser.versions.mobile||browser.versions.ios||browser.versions.android||browser.versions.iPhone||browser.versions.iPad){}else{};</script>
+ 
+
+<div class="toptext">	
+	<div class="text">	
+		<div class="left">
+			欢迎光临<a href="http://www.yssun.com"><b><font color='blue'>深圳市宇顺企业管理咨询有限公司官网</font></b></a>，即刻尊享“<font color='red'>1元注册深圳公司</font>”
+		</div>
+		<div class="right">
+			<a href="../jianjie/index.html">关于我们</a> | <a href="../lianxi/index.html">联系我们</a>
+		</div>
+	</div>
+</div>
+
+<div class="header">
+	<div class="head">
+		
+		<div class="logo">
+			<div class="left">
+				<a href="../index.html" ><img src="../templets/yssun/images/logo.gif" alt="这里是深圳市宇顺企业管理咨询有限公司官网"/>
+			</div>
+			<div class="right">
+				<a href="../index.html" ><img src="../templets/yssun/images/tel.gif" alt="宇顺企业管理咨询官网免费热线:0755-32861413  13723799805 "/>
+			</div>
+		</div>
+	</div>
+
+	<div class="nav">
+		<div class="navul">
+
+			<!--nav-->
+			<ul id="menu">
+			  <li id="m1"><a href="../index.html" >首 页</a></li>
+			  <li id="m2"><a href="../neizi_zc/index.html" title="深圳公司注册">深圳公司注册</a></li>
+			  <li id="m3"><a href="../waizi_zc/index.html" title="外资公司注册">外资公司注册</a></li>
+			  <li id="m4"><a href="../qianhai/index.html" title="前海公司注册">前海公司注册</a></li>
+			  <li id="m5"><a href="../jizhang/index.html" title="代理记账报税">代理记账报税</a></li>
+			  <li id="m6"><a href="../wenti_zc/index.html" title="常见问题">常见问题</a></li>
+			  <li id="m7"><a href="../news/index.html" title="工商新政策">工商新政策</a></li>
+			  <li id="m8"><a href="../jianjie/index.html" title="关于我们">关于我们</a></li>
+			  <li id="m9"><a href="../lianxi/index.html" title="联系我们">联系我们</a></li>
+			</ul>
+			<!--nav end-->
+
+		</div>
+	</div>
+</div>
+
+<div class="banner0">
+  <img style="width:980px;" src="../templets/yssun/images/banner01.gif" alt="">
+</div>
+
+<div class="clear"></div>
+
+<!--  main  -->
+<div class="main_n">
+	
+	﻿	<div class="nleft">
+		<div class="cates">
+			<div class="cate_t">代理记账报税</div>
+			<div class="content">
+				<dl>
+					<dd><a href="../neizi_zc/200.html"><font color="blue">1元注册深圳公司</font></a></dd>
+					<dd><a href="../jizhang/199.html"><font color="blue">代理记账报税服务</font></a></dd>
+					<dd><a href="../qianhai/195.html"><font color="blue">前海公司注册流程</font></a></dd>
+					<dd><a href="../waizi_zc/119.html">外商独资公司注册</a></dd>
+					<dd><a href="../jizhang/199.html">代理记账报税服务</a></dd>
+					<dd><a href="../jizhang/138.html">新注册企业需做账报税</a></dd>
+					<dd><a href="../neizi_zc/198.html">2018深圳公司注册新政策</a></dd>
+					<dd><a href="../neizi_zc/4.html">公司注册名称核准</a></dd>
+					<dd><a href="../neizi_zc/10.html">公司经营范围参考</a></dd>
+					<dd><a href="../jizhang/145.html">小型微利企业所得税优惠</a></dd>
+					<dd><a href="../jizhang/137.html">新公司何时开始报税建账</a></dd>
+					<dd><a href="../qianhai/197.html">前海企业所得税优惠政策</a></dd>
+				</dl>
+			</div>
+		</div>
+		<div class="tel">
+			<dl>
+				<dt><img src="../templets/yssun/images/ad4.gif" alt=""></dt>
+				<dd> 深圳市宇顺企业管理咨询有限公司</dd>
+				<dd>创业热线<font color="#FF0000"><b>：0755-32861413 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13723799805 </b></font></dd>
+				 
+<dd>在线咨询：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=494394758&amp;site=qq&amp;menu=yes"><img border="0" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAAAWCAMAAAB68gtgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6REMxNzIxQUM1ODZFMTFFMkE2QUJERjZDOTBFMjlDMzciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6REMxNzIxQUQ1ODZFMTFFMkE2QUJERjZDOTBFMjlDMzciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpEQzE3MjFBQTU4NkUxMUUyQTZBQkRGNkM5MEUyOUMzNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpEQzE3MjFBQjU4NkUxMUUyQTZBQkRGNkM5MEUyOUMzNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pvt6ESkAAAMAUExURand9oa71Kji/Wias/7rtJ3Y9aXe+f+yOqHZ9fdKLKXh/fvTkut3J/SbK//snv+lGv2rIo7I5a3h+vv7/PWxcpzT7CkpNcnO1Z3e/dCRMa7k/e+Waq3e9VqHnf/TLqLg/fnHeZZ6Wv/LVvrDZrl7ULHi+f+5QaHd+i5UaK6QdNF+LElxhf+hFYnB3JnW9KTb9WqUqpHO6skkF6rf+Jna+abc9qrh+vuHBIKzyjtidnKlvv/BS6nV68Xs/3apwbLg9ltrevOLGPu7FG+KnPJaQqzj/Mjt/7no/+Li4//GUYOjt5jV8v+fEvKFGf61K5HL5sHr/3XF7/rZr5XU87ni9/aTFbzp/7Xh9nvJ8LDk/PIUDrbn/vabF82EQ/mmFcLm+Lzk9/czFP7RapzF2uauUL+ab/iWFfumIa/f9rcOD7bm/aDf/P+wJf+pHUwtJUBGUf/89LTk+/fHp5rP526etDc3RJ7c+pTU9HyrwSIfKPqsKPOkWsbr/JfW9PanScTp+rp0Ov737e3y9pPT8ml9kEVvhH+20f308rPm/rHm/unt8f3WfFF8kf+7MYHM8Ux6kPX19x5FWJrc+o8xLOg4Idzl7pbV9J3a9//NF/L1+f713m6jvboyI50qFXWgtpvd/JzX9ZLU88np+ZbX9rDl/v/1yabf+5/f/prY9sDl97Dm/vihFm/B77Pi+Kvj/pXW9f+9Sff4+rbk/KHb95zX82y/7h4bJAszRvB/Gf+9M/++NLfo/rHl/f+4LgICApfY98TBvZfZ+P/cUJPU83mnvnKnwPSPGrLl/nivyvepOmGRqeipoXyaq3mwy6HX8bLV6n1GKqna8r+ylf2/Vt+lTMm2cO6KQP+rA0U+QouuwuiICImOnZK4y7Oztv+XBFB6kHZnXdQvHefKyFJgbeumBpLF37WKNv7hkqAYDtPb4/nm5neov83v/tybmsKwofS2i/GEEPOLFM/w/3Wsx/izR/ivS32qwP7uy5bP6fzo2qKBTLXl+4XO8Wq+7v///////8s3US4AAAEAdFJOU////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wBT9wclAAAFAklEQVR42qzTfVRTdRjA8bsmIDr3puDAXSVs7Cc4YDCmd6igOQ2VzTQ0FFEp2Yoh4YZ4MQrTTUWQc31L1HhRnJYaGOW1EjMRNHoly7I3MyPt3dKMwkbP795NFI7/+d3Ovds593zOc579RnTfvBd9mtm3sG7i5qI/p/RuvK+Z42f2NAe/vE31NZ8vMyu8d1mZYcTGX+a8yeV9bB3f+vXrX6qrqwvFvcx1H9cArhF8+/gUCkVm+Bt9ysokNk7xuueTaTr40lccffr0sWPHePlO+274gfDX+xR+AOOYnrqmIJim6SN5792yfbjReBc8J2dfNG8rDqSUl5uKbstUXp6C8flPQucL8k54jntOHMl7bB3Q6enpvGu8nQZ2AsXLAsc+gTanBSkULYrq6mqMFz3lwYm5ijj8UQ6fnxxc4Dm+5riHDk7GdmhoXRViWWoFlmNZlo3qGGCfgGMc+JqjRY4WpBVSWmcF2NUZKU1NRau8eL+9e8VFTU0pGYDjwbtomp8c7njs9PRYtspojGXHGo0U0uj7RzH2sainaLWGUjgETuf7bdWboIwUk6lohxcPE4nCpCYTxp/u6urKVy6lv9g+fPik78fQBap0VagqiL0hN8pDSaRfwdr1brcbke4R7k5Sre4s06rV5paW6dWbDAyJDEDrdBmJJpP0bx6fBfYGi8mUiPFX8vPzP9z1xJUxkz77ZsyVK7usKrlKXsXKIb2A7SiLcscD7mDc/p3IoVar25BguYZkzQaKMZw5gyp0UHaizWTpx+H9zolWirMsNlNiNuBg538ZN+/iRy9AcfM2P6gCtgrJ9Xq93M4Kokg37mfWvwOVAW5GZYxguRlwUmZAutUGjKcl2myWgedEQzyelaJzYvFIi82WmEY8jPFpwZvnLQ6cHBi4eEscXTAN46w+Hupg7TC5P+RAasoxHViSWi4QYlxI6oRIp6HehtIabFLLwH9EomXLRKLLYvFZi9TWAPizhw7lJ9Of/xp3MXDysHe/Kz0SfAlwO3sD4yQiTrF2jCOyEXIgA6N5HpKxMh11rYJxoZ1vQa0NUqllpAfWDQuHk3hdIpU2tGJcpaLpb3/aElg5eLDncOlSusAIbCxTRcTDaUnwpyhBTJCTMWO80cm2YXu/jBUKXS7GWbFzD641Qpor+cvj+V0EC4fekeTmRvjwNf+uDQyEX2NwZen95/OsgBNVDJzzU3hoEs55mSamsTHI4GQuMKSGw5HMhSq0iNRifGJEbq5kEADDOFs8COMTiYOwFlX7uB9+rDyM7a0PhbTjfcQTBPEBhQQJCQkxCY0aRJljzE4GCWV+MpJBbdEaykWxZP0eGWKuFdbXT4yQSCTZYas8q9YCffn6H/CVx5OSkj4O+WRo6eHK57aeCAlRcjIuwcGyZAwu6ALLGoQuP9z+TuHO/dHRxUJXffGeWq1Qu62wMDVCMhr01ln4TzSyNRvs0RGpxMGFSVarNfLk9gVLvh762+OTTkZGemUcJ/fn8/ODdw0EMlS8jau5trmwuTk1YDRX2jM7NgxKm8F9DkglXuPwUSUlJQ+MGge3yAVLbtkxPTaGcTXRfMXFHF4IcHNzba0Pn5F99Wo2b3P47rmAW+WqJKVS2d4OLHch7rQxXlPzKoTl6bjZUOHs1XypATN6J2kAXLl7YU8velvk6xFfc30l+bLywUxK69GzAb1rSB1CdP93L1pytG9Duv8XYACYZVDdZpPw6wAAAABJRU5ErkJggg==" alt="点击这里给我发消息" title="点击这里给我发消息"></dd>
+<!-- WPA Button End --></dd>
+				<dd>公司地址：深圳市南山区玉泉路通海苑北座三单元首层9号(南山国税局正对面)</dd>
+			</dl>
+		</div>
+	</div>
+
+	<div class="nright">
+		<div class="mbx">
+			你现在的位置：<a href='http://yssun199.gitee.io/yssun/'>主页</a> >  <a href="http://yssun199.gitee.io/yssun/neizi_zc/index.html" >深圳公司注册</a> > > 
+		</div>
+		<div class="artcontent">
+			<h1>
+			 <!--start 标题 -->
+			金蝶操作教程之五①——报表函数
+
+			 <!--end  标题 -->
+			</h1>
+			<div class="laiyuan">来源： <a href="http://www.yssun.com">深圳市宇顺企业管理咨询有限公司</a> 作者：admin</div>
+			<div class="body">
+<!--start 内容 -->
+
+<pre> 
+<div class="rich_media_content " id="js_content">
+                        
+                       <p style="font-weight: 400;">报表函数的基本操作</p>
+<p style="font-weight: 400;">在报表中需要使用函数来进行一些取数或是计算，使用函数的基本方法如下：</p>
+<p style="font-weight: 400;">选择菜单〖视图〗，单击〖编缉栏〗则显示“√”，此刻会出现公式的编缉框，可以直接在界面中进行公式的编缉。编辑公式的方法有三种：</p>
+<p style="font-weight: 400;">1、通过〖插入〗→〖函数〗</p>
+<p style="font-weight: 400;">2、按F8键快捷键</p>
+<p style="font-weight: 400;">3、单击工具栏“函数”按钮调出函数列表进行函数操作。</p>
+<p style="font-weight: 400;">在视图中的编缉栏中，可以进行报表公式设置，如下图所示：</p>
+<p style="font-weight: 400;">通过以上三种方法中任意一种，都将会弹出所有报表函数的列表，如下图所示：</p>
+<p style="font-weight: 400;">在“报表函数”中列示出了所有的函数，可以根据需要选择不同的函数进行公式的设置。公式设置完成后，单击【确定】，所设置的公式即保存到报表中。</p>
+<p style="font-weight: 400;">报表函数分类别介绍</p>
+<p style="font-weight: 400;">所有函数的含义在报表函数的左下角提示。例如，单击ABS，在报表函数的左下角提示 ABS：计算给定值的绝对值。如前图所示。</p>
+<p style="font-weight: 400;">一、        全部函数</p>
+<p style="font-weight: 400;">金蝶报表系统中所有的函数类型。详见下列分类函数介绍。</p>
+<p style="font-weight: 400;">二、        数学与三角函数</p>
+
+<table>
+<thead>
+<tr>
+<td width="117">数 据 项</td>
+<td width="337">说          明</td>
+<td width="113">必填项（是/否）</td>
+</tr>
+<tr>
+<td width="117">ABS</td>
+<td width="337">计算给定数据的绝对值。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">ATN</td>
+<td width="337">计算数据的反正切值。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">AVG</td>
+<td width="337">求平均数函数。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">COS</td>
+<td width="337">返回给定数据余弦值。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">COUNT</td>
+<td width="337">统计数量函数，计算所有非空格单元格的个数。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">EXP</td>
+<td width="337">将定值以e的幂形式表现。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">LOG</td>
+<td width="337">计算给定数值的自然对数值。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">MAX</td>
+<td width="337">求最大值函数。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">MIN</td>
+<td width="337">求最小值函数。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">ROUND</td>
+<td width="337">根据指定数值四舍五入。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">SIN</td>
+<td width="337">返回给定数据正弦值。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">SQR</td>
+<td width="337">返回给定正数的平方根。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">SUM</td>
+<td width="337">求和函数。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+<tr>
+<td width="117">TAN</td>
+<td width="337">返回给定数值的正切值。</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="117">VAL</td>
+<td width="337">数据转换函数</td>
+<td width="113">根据实际需要可选</td>
+</tr>
+</tbody>
+</table>
+<p style="font-weight: 400;">1、    SUM函数公式定义</p>
+<p style="font-weight: 400;">选择ＳＵＭ函数，系统将弹出求和函数的公式定义，具体参数设置如下：</p>
+<p style="font-weight: 400;">l         参数１</p>
+<p style="font-weight: 400;">您所需定义的参数，该参数可以是一个单元格，也可以是一个单元块以及数值公式。</p>
+<p style="font-weight: 400;">l         参数２</p>
+<p style="font-weight: 400;">同参数１。</p>
+<p style="font-weight: 400;"><strong>注意事项         </strong>对单元格A8设置公式：SUM（A1+A2），表示单元格A8的结果=A1单元的数据+A2单元的数据。若为连续的单元格相加，可用：分隔。例如对单元格A8设置从A1加到A7的数据公式为：SUM（A1：A7）</p>
+<p style="font-weight: 400;">如果您还有别的参数需要进行定义，在定义完参数之后单击回车键（ENTER键）系统将直接进入下一个参数的定义。</p>
+<p style="font-weight: 400;">2、    VAL函数公式定义</p>
+<p style="font-weight: 400;">Val函数用于实现不同类型数据转换。以将文本型数字、RPTDATE函数带的日期型数据转换为数值型，参与公式的计算。数字字符可以是手工录入的字符，如“20”，如果录入的是文本型的字符串，VAL返还结果就是0。也可以是其他取数公式返回的数字字符。如RPTDATE("MM")函数。如为非数字字符（如2003-9-1），返回结果为0，即不支持单独的日期的转换。</p>
+<p style="font-weight: 400;">VAL函数对RPTDATE()函数只支持单字符串的转换。如：RPTDATE(YY)、RPTDATE(YYYY)、RPTDATE(MM)、RPTDATE(DD)。</p>
+<p style="font-weight: 400;">VAL函数是一个转换函数，所以在录入的取数参数外都自动加上了双引号。如果取数参数是取数公式时，系统也会自动在取数公式外加上双引号，如VAL（“RPTDATE(YYYY)），请手工将公式里的双引号去掉，否则无法取数；如果取数参数为数值或字符，则不用去掉双引号。</p>
+<p style="font-weight: 400;">在“数学与三角函数”类别下是日常数学计算中常用的函数，此处不再一一列举公式定义了。</p>
+<p style="font-weight: 400;">三、        财务计算函数</p>
+
+<table>
+<thead>
+<tr>
+<td width="113">数 据 项</td>
+<td width="340">说          明</td>
+<td width="113">必填项（是/否）</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="113">DDB</td>
+<td width="340">计算用双倍余额递减法求解某一固定资产的折旧值。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">FV</td>
+<td width="340">基于固定利率及等额分期付款方式，返回某项投资的未来值。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">IPMT</td>
+<td width="340">返回给定期次内某项投资回报或贷款偿还的给定利息。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">NPER</td>
+<td width="340">基于固定利率和等额付款的方式，返回一项贷款或投资的期数。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">PMT</td>
+<td width="340">返回在固定利率下，投资或贷款的等额分期偿还额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">PPMT</td>
+<td width="340">返回在给定期次内某项投资回报（或贷款偿还）的本金部分。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">PV</td>
+<td width="340">返回某项投资的一系列等额分期偿还额之和（或一次性偿还额的现值）。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">RATE</td>
+<td width="340">基于等额分期付款（或一次性付款）方式，返回投资或贷款的实际偿还率。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">REF_F</td>
+<td width="340">返回指定报表，指定页，指定单元的值。</td>
+<td width="113"><strong> </strong></td>
+</tr>
+<tr>
+<td width="113">SLN</td>
+<td width="340">返回指定固定资产的每期线性折旧额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">SYD</td>
+<td width="340">返回指定固定资产按年数总和法计算的每期折旧额。</td>
+<td width="113">是</td>
+</tr>
+</tbody>
+</table>
+<p style="font-weight: 400;">使用此类函数，用户只需录入一些简单的参数值即可完成计算的过程，无须您进行公式的设置。</p>
+<p style="font-weight: 400;">四、        常用报表函数</p>
+<p style="font-weight: 400;">常用报表函数，指经常使用的报表函数。</p>
+<p style="font-weight: 400;">                            函数类型说明</p>
+
+<table>
+<thead>
+<tr>
+<td width="117">数 据 项</td>
+<td width="337">说          明</td>
+<td width="113">必填项（是/否）</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="117">ACCT</td>
+<td width="337">总账科目取数公式。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">COMPUTERTIME</td>
+<td width="337">返回计算机当前日期。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">DATE</td>
+<td width="337">返回计算机当前日期。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">DATEDIFF</td>
+<td width="337">求指定日期参数2与参数1之间的天数差。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">ITEMINFO</td>
+<td width="337">返回指定核算项目的属性值。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">KEYWORD</td>
+<td width="337">取表页的关键字的函数。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">PAGENAME</td>
+<td width="337">取表页名称函数。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">PAGENO</td>
+<td width="337">返回当前表页的值。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">REF</td>
+<td width="337">返回指定表页、指定单元格的值。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">RPRDATA</td>
+<td width="337">返回指定格式的当前报表日期。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">RPTQUARTER</td>
+<td width="337">季度取数函数。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">RPTSHEETDATE</td>
+<td width="337">获取当前报表指定表页的开始日期或结束日期，并以指定日期格式返回。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">SYSINFO</td>
+<td width="337">返回指定关键字的系统信息。</td>
+<td width="113">是</td>
+</tr>
+</tbody>
+</table>
+<p style="font-weight: 400;">          函数公式定义举例</p>
+<p style="font-weight: 400;">１、  ACCT函数公式定义</p>
+<p style="font-weight: 400;">选择〖插入〗—&gt;〖函数〗，系统将所有的报表函数列出，选择“金蝶报表函数”中的ＡＣＣＴ函数，双击鼠标左键，系统将弹出定义公式的界面，如下图所示：</p>
+<p style="font-weight: 400;">在进行ACCT函数中需要设置以下的一些参数：</p>
+<p style="font-weight: 400;">l         科目</p>
+<p style="font-weight: 400;">首次使用可采用向导自动生成科目与核算项目参数，光标在科目录入框内按键盘F7显示如下：</p>
+<p style="font-weight: 400;">生成的公式描述如下：</p>
+<p style="font-weight: 400;">科目公式=“科目代码1：科目代码2|项目类别|项目代码1：项目代码2|项目类别|项目代码1:项目代码2”</p>
+<p style="font-weight: 400;">下面针对公式中“”内的内容进行说明：</p>
+<p style="font-weight: 400;">“”中的内容用于存放用户所选择的科目和核算项目代码。公式中的科目代码，项目类别和项目代码，在字符“|”和“：”的分隔下可以进行20种组合，得到不同范围的科目和核算项目。组合情况如下：</p>
+
+<table style="font-weight: 400;">
+<tbody>
+<tr>
+<td width="125">A</td>
+<td width="132">a：</td>
+<td width="125">：a</td>
+<td width="139">a1：a2</td>
+</tr>
+<tr>
+<td width="125">A|b</td>
+<td width="132">a：|b</td>
+<td width="125">：a|b</td>
+<td width="139">a1：a2|b</td>
+</tr>
+<tr>
+<td width="125">A|b|c</td>
+<td width="132">a：|b|c</td>
+<td width="125">：a|b|c</td>
+<td width="139">a1：a2|b|c</td>
+</tr>
+<tr>
+<td width="125">a|b|c：</td>
+<td width="132">a：|b|：c</td>
+<td width="125">：a|b|c：</td>
+<td width="139">a1：a2|b.c：</td>
+</tr>
+<tr>
+<td width="125">a|b|c1：c2</td>
+<td width="132">a：|b|c1：c2</td>
+<td width="125">：a|b|c1：c2</td>
+<td width="139">a1：a2|b|c1：c2</td>
+</tr>
+</tbody>
+</table>
+<p style="font-weight: 400;">其中：</p>
+<p style="font-weight: 400;">“a”，“a1”，“a2”表示科目代码</p>
+<p style="font-weight: 400;">“b”表示核算项目类别名称</p>
+<p style="font-weight: 400;">“C”，“C1”，“C2”表示核算项目代码</p>
+<p style="font-weight: 400;">“a：”表示代码大于或等于科目a的所有科目</p>
+<p style="font-weight: 400;">“：a”表示代码小于或等于a的所有科目</p>
+<p style="font-weight: 400;">“a1：a2”表示代码大于或等于a1并且小于或等于a2的所有科目</p>
+<p style="font-weight: 400;">“C：”表示代码大于或等于C的所有核算项目</p>
+<p style="font-weight: 400;">“：C”表示代码小于或等于C的所有核算项目</p>
+<p style="font-weight: 400;">“C1：C2”表示代码大于或等于C1并且小于或等于C2的核算项目</p>
+<p style="font-weight: 400;">当核算项目类别b和代码C，C1，C2都缺省时，表示指定科目下设所有的核算项目类别。</p>
+<p style="font-weight: 400;">当核算项目类别b不省略，而核算项目代码缺省时，表示指定核算项目类别b中所有核算项目。</p>
+<p style="font-weight: 400;"><strong>举   例            </strong>函数表达式：ACCT(“：123|客户|003：”，“C”)</p>
+<p style="font-weight: 400;">表示科目代码小于或等于123，下设科目核算项目：客户，客户代码大于或等于003的本位币的期初余额。</p>
+<p style="font-weight: 400;">函数表达式：ACCT（“214|职员|0001：0012”，“Y”）</p>
+<p style="font-weight: 400;">表示科目代码为214，下设科目核算项目：职员，职员代码在0001到0012之间的本位币期末余额。</p>
+<p style="font-weight: 400;">为方便用户操作，提供“*”为科目参数的通配符，每一个通配符只匹配一个字符，可对科目（核算项目也适用）进行模糊取数。</p>
+<p style="font-weight: 400;"><strong>举   例          </strong>10**表示取一级科目代码为四位，并且起始两个代码为10的所有科目。</p>
+<p style="font-weight: 400;">   1131|客户|**表示包括科目代码1131下的所有客户。</p>
+<p style="font-weight: 400;">因为通配符本身就具有范围的概念，因此带有通配符的科目或核算项目不能有起止范围，以免引起取数错误。同时通配符只支持匹配如：55**.**/产品/01.**.**.****，也就是说通配符必须连续匹配，并且从最后一个开始匹配，如果出现10*1、1**1等诸如此类的匹配，系统给出提示“不符合匹配规则”，要求重新匹配。</p>
+<p style="font-weight: 400;">l  取数类型</p>
+<p style="font-weight: 400;">由用户定义科目取值为科目的期初余额、本期发生额、累计发生额等，光标放在取数类型录入框内，安键盘F7键，系统将弹出所有取数类型的下拉框由您进行选择，如下图所示：</p>
+<p style="font-weight: 400;">下面介绍以下各个代码代表的含义：</p>
+
+<table>
+<thead>
+<tr>
+<td width="113">数 据 项</td>
+<td width="340">说          明</td>
+<td width="113">必填项（是/否）</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="113">C</td>
+<td width="340">期初余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">JC</td>
+<td width="340">借方期初余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">DC</td>
+<td width="340">贷方期初余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">AC</td>
+<td width="340">期初绝对余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">Y</td>
+<td width="340">期末余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">JY</td>
+<td width="340">借方期末余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">DY</td>
+<td width="340">贷方期末余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">AY</td>
+<td width="340">期末绝对余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">JF</td>
+<td width="340">借方发生额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">DF</td>
+<td width="340">贷方发生额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">JL</td>
+<td width="340">借方本年累计发生额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">DL</td>
+<td width="340">贷方本年累计发生额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">SY</td>
+<td width="340">利润表本期实际发生额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">SL</td>
+<td width="340">利润表本年实际发生额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">BG</td>
+<td width="340">取科目本年最高预算余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">BD</td>
+<td width="340">取科目本年最低预算余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">BJG</td>
+<td width="340">本期最高预算借方发生额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">BDG</td>
+<td width="340">本期最高预算贷方发生额</td>
+<td width="113"><strong> </strong></td>
+</tr>
+<tr>
+<td width="113">TC</td>
+<td width="340">折合本位币期初余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TJC</td>
+<td width="340">折合本位币借方期初余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TDC</td>
+<td width="340">折合本位币贷方期初余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TAC</td>
+<td width="340">折合本位币期初绝对余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TY</td>
+<td width="340">折合本位币期末余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TJY</td>
+<td width="340">折合本位币借方期末余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TDY</td>
+<td width="340">折合本位币贷方期末余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TAY</td>
+<td width="340">折合本位币期初绝对余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TJF</td>
+<td width="340">折合本位币借方发生额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TDF</td>
+<td width="340">折合本位币贷方发生额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TJL</td>
+<td width="340">折合本位币借方本年累计发生额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TDL</td>
+<td width="340">折合本位币贷方本年累计发生额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TSY</td>
+<td width="340">折合本位币利润表本期实际发生额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TSL</td>
+<td width="340">折合本位币利润表本年实际发生额</td>
+<td width="113">是</td>
+</tr>
+</tbody>
+</table>
+<p style="font-weight: 400;">l         会计期间</p>
+<p style="font-weight: 400;">可直接指定期间数，分别录入&lt;起始期间&gt;和&lt;结束期间&gt;，若不选则系统默认为本期。若写入数值，表示的意义如下，0：本期，-1：上一期，-2：上两期，如此类推。</p>
+<p style="font-weight: 400;">l         会计年度</p>
+<p style="font-weight: 400;">可直接指定年度，如2015，若不选则系统默认为当前年。若写入数值，表示的意义如下，0：本年，-1：前一年，-2：前两年，如此类推。</p>
+<p style="font-weight: 400;">l         币别</p>
+<p style="font-weight: 400;">币别代码，如RMB，若不选则系统默认为综合本位币。可直接录入币别代码或按F7选择。</p>
+<p style="font-weight: 400;"><strong>注意事项         </strong>为数量取数更加精确，在报表系统中小数位数可以通过单元格式小数位设置进行控制。在总账的凭证录入时，录入的数量是多少位小数，则在报表系统中取出来的数据就是多少位，系统不做截位，如果在使用时觉得小数位太长，可以通过单元格的小数位数的设置来进行设置。</p>
+<p style="font-weight: 400;">设置完这些参数之后，ACCT函数便定义完成。单击【确认】，退出公式定义的操作。还可以在不退出公式的状态下，单击ACCT函数下拉框中的“其他函数”，系统将列出所有的函数，即可以设置别的函数。</p>
+<p style="font-weight: 400;">            2、     REF函数公式定义</p>
+<p style="font-weight: 400;">REF函数是用来对同一张报表的不同表页中数据进行取数的，当然也可以是同一个表页中数据，需要进行定义的参数有：</p>
+<p style="font-weight: 400;">    取数内容，可为报表的单元格如A1字样或数值公式如SUM(B1:B5)；</p>
+<p style="font-weight: 400;">    表页，报表的表页号。如果为空，则系统默认为当前的表页。</p>
+<p style="font-weight: 400;">            3、     RPTDATE函数公式定义</p>
+<p style="font-weight: 400;">此函数提供了对当前日期按不同格式显示的功能，在显示报表编制日期，在进行页眉页脚的编辑时非常有用。</p>
+<p style="font-weight: 400;">公式设置：RPTDATA(字符串参数)。如在参数录入框中录入”yyyy-mm”,则自动生成公式为RPTDATE("YYYY-MM")，系统返回当前的年月值。</p>
+<p style="font-weight: 400;"><strong>注意事项         </strong>公式设置如果提示“语法错”，请检查是否多输入了双引号“”，系统已自动加上双引号，不用用户输入。</p>
+<p style="font-weight: 400;">系统提供的另一函数RPTSHEETDATE用于取出“公式取数参数”中的开始日期和结束日期，取数的格式为“yyyy－mm－dd”至”yyyy－mm－dd”，其中时间的格式可由客户自己定义，参数设置比RPTDATA函数多两个参数：日期类型和表页。日期类型用于选择是开始或结束日期，表页用于选择当前报表下的不同表页。其他操作和RPTDATA函数一致！</p>
+<p style="font-weight: 400;"><strong>注意事项         </strong>在上述这些函数中，只有金蝶报表函数ACCT同数据源相联系，必须确定数据源，为数据源配置驱动程序，确定账套数据库和系统数据库，其余的函数与数据源不相关联。</p>
+<p style="font-weight: 400;">五、        逻辑函数</p>
+
+<table>
+<thead>
+<tr>
+<td width="113">数 据 项</td>
+<td width="340">说          明</td>
+<td width="113">必填项（是/否）</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="113">COMPARE</td>
+<td width="340">比较函数。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">IF</td>
+<td width="340">执行真假值判断，根据逻辑判断值的真假返回不同的结果。</td>
+<td width="113">是</td>
+</tr>
+</tbody>
+</table>
+<p style="font-weight: 400;">逻辑函数公式定义非常简单，在这里就不再举例说明。</p>
+<p style="font-weight: 400;">六、        总账函数</p>
+
+<table>
+<thead>
+<tr>
+<td width="113">数 据 项</td>
+<td width="340">说          明</td>
+<td width="113">必填项（是/否）</td>
+</tr>
+<tr>
+<td width="113">ACCTEXT</td>
+<td width="340">科目按日取数函数。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">ACCTCASH</td>
+<td width="340">现金流量及附表项目取数公式。</td>
+<td width="113">是</td>
+</tr>
+</thead>
+</table>
+<p style="font-weight: 400;">公式定义举例：</p>
+<p style="font-weight: 400;">如下图所示，总账凭证取数ACCTEXT提供了按过滤条件从总账的日报表中按日取数的功能，用于进行销售日报、采购日报、费用日报等报表的编制。ACCTEXT取数的参数与科目取数ACCT类似，只是增加了对方科目编码和过滤条件等参数，同时ACCT的年度与期间在ACCTEXT中改为开始日期、结束日期。</p>
+<p style="font-weight: 400;">l         科目编码</p>
+<p style="font-weight: 400;">要取数的科目编码，具体操作参见ACCT函数。</p>
+<p style="font-weight: 400;">l         对方科目编码</p>
+<p style="font-weight: 400;">对方科目编码实际是作为过滤条件，指定取数科目在凭证中必须应有的对应科目，若对应科目有核算项目，按F7可调出取数向导：</p>
+<p style="font-weight: 400;"><strong>注意事项         </strong>在此可以选择对方科目及核算项目，目前仅限选择一个对方科目，不能选择多个对方科目，否则，会提示“对方科目不能跨段取数”。</p>
+<p style="font-weight: 400;">l         过滤条件</p>
+<p style="font-weight: 400;">根据不同需要分类凭证，单击“F7”弹出过滤条件向导，如下图所示：</p>
+<p style="font-weight: 400;">单击【增加】增加一过滤条件，可增加多条过滤条件，选择条件之间的关系“and”或者是“or”。条件设置完成后，单击【确定】退出过滤条件设置界面。</p>
+<p style="font-weight: 400;">l         取数类型</p>
+<p style="font-weight: 400;">如下图，系统提供可选择的取数类型，系统默认为原币借方发生额。</p>
+<p style="font-weight: 400;">在ACCTEXT函数中增加了八种取数类型，分别说明如下：</p>
+
+<table>
+<thead>
+<tr>
+<td width="113">数 据 项</td>
+<td width="340">说          明</td>
+<td width="113">必填项（是/否）</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="113">C</td>
+<td width="340">上日余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">Y</td>
+<td width="340">本日余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">QJF</td>
+<td width="340">收入数量</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">QDF</td>
+<td width="340">发出数量</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TC</td>
+<td width="340">折合本位币上日余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TY</td>
+<td width="340">折合本位币本日余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">YA</td>
+<td width="340">本日平均余额</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="113">TYA</td>
+<td width="340">折合本位币本日平均余额</td>
+<td width="113">是</td>
+</tr>
+</tbody>
+</table>
+<p style="font-weight: 400;">增加的两种取数类型：收入数量、发出数量，使ACCTEXT函数对数量金额式科目可以按日取出数量，如果同一科目存在多计量单位时按科目默认计量单位进行转换。</p>
+<p style="font-weight: 400;"><strong>注意事项         </strong>如果科目编码取的是界定在一定范围内，则余额取各科目余额的合计数，各科目的余额根据该科目设置的余额方向来确定正负，与余额方向相同为正，与余额方向相反为负。</p>
+<p style="font-weight: 400;">l         币别</p>
+<p style="font-weight: 400;">选择币别，系统默认为综合本位币。</p>
+<p style="font-weight: 400;">l         开始日期，结束日期</p>
+<p style="font-weight: 400;">ACCTEXT函数中开始日期与结束日期为空时默认为公式取数参数中的开始日期与结束日期。公式中录入的日期优先于公式取数参数的日期。写入数值，均是相对于公式取数参数的日期，表示的意义如下，0：本日，-1：前一日，-2：前两日，如此类推。1:下一日，2：下两日，如此类推。原来的日期录入方式保持不变，仍然可以录入2013-5-23类型的日期格式。报表重算无数据时单元格显示为0。</p>
+<p style="font-weight: 400;"><strong>注意事项         </strong>为数量取数更加精确，在报表系统中小数位数可以通过单元格式小数位设置进行控制。在总账的凭证录入时，录入的数量是多少位小数，则在报表系统中取出来的数据就是多少位，系统不做截位，如果在使用时觉得小数位太长，可以通过单元格的小数位数的设置来进行设置。</p>
+<p style="font-weight: 400;">七、        工资取数函数</p>
+
+<table>
+<thead>
+<tr>
+<td width="117">数 据 项</td>
+<td width="337">说          明</td>
+<td width="113">必填项（是/否）</td>
+</tr>
+<tr>
+<td width="117">FOG_PA</td>
+<td width="337">用于工资系统中对工资项目进行取数。</td>
+<td width="113">是</td>
+</tr>
+</thead>
+</table>
+<p style="font-weight: 400;">函数公式定义举例：</p>
+<p style="font-weight: 400;">FOG_PA函数专用于在工资系统取数，共设六个参数。</p>
+<p style="font-weight: 400;">l         工资类别</p>
+<p style="font-weight: 400;">用于指定取数的工资类别。在工资类别录入界面按F7，系统将弹出在所选账套下的所有工资类别列表，供用户选择，一次只能选一种工资类别且为必选项，不能缺省。</p>
+<p style="font-weight: 400;">l         部门</p>
+<p style="font-weight: 400;">用于细分工资数据来源，可以选择多个不同的部门。在部门录入界面按F7，系统将弹出在当前工资类别下的部门管理界面，供用户进行选择。缺省状态下系统默认为当前类别下的所有部门。</p>
+<p style="font-weight: 400;">l         职员</p>
+<p style="font-weight: 400;">用于细分工资数据来源，可以选择多个职员。在职员录入界面按F7，系统将弹出在当前工资类别下的职员管理界面，供用户选择。缺省状态下系统默认为当前部门下的所有职员。</p>
+<p style="font-weight: 400;">l         工资项目</p>
+<p style="font-weight: 400;">用于指定取数来源，只能选择一个工资项目。在工资项目录入界面按F7，系统将弹出在当前工资类别下所有实数型和货币型的工资项目的下拉菜单，供用户进行选择。</p>
+<p style="font-weight: 400;">l         货币</p>
+<p style="font-weight: 400;">具体指定报表的币别，缺省状态下系统默认为本位币。</p>
+<p style="font-weight: 400;">l         起始期间和结束期间</p>
+<p style="font-weight: 400;">设置取数日期。结束期间必须大于起始期间，缺省状态下系统默认为当前报表期间</p>
+<p style="font-weight: 400;">以上所有参数均可手工录入。</p>
+<p style="font-weight: 400;">　　　　八、   固定资产取数函数</p>
+
+<table>
+<thead>
+<tr>
+<td width="117">数 据 项</td>
+<td width="337">说          明</td>
+<td width="113">必填项（是/否）</td>
+</tr>
+<tr>
+<td width="117">FOG_FA</td>
+<td width="337">用于固定系统中对固定资产项目进行取数。</td>
+<td width="113">是</td>
+</tr>
+</thead>
+</table>
+<p style="font-weight: 400;">该公式共有十个选项：取数方式和含义。</p>
+<p style="font-weight: 400;">1、             固定资产类别、编码，部门，取数类型，变动方式，使用状态：均可单击对话框，按&lt;F7&gt;快捷键，在弹出的对话框内进行选择。</p>
+<p style="font-weight: 400;">2、             货币：默认为本位币。</p>
+<p style="font-weight: 400;">3、             年度：可直接指定年度，如2013，若不选则系统默认为当前年。若写入数值，表示的意义如下，0：本年，-1：前一年，-2：前两年，如此类推。</p>
+<p style="font-weight: 400;">4、             起始期间，结束期间：设置取数日期。结束期间必须大于起始期间，缺省状态下系统默认为当前报表期间。</p>
+<p style="font-weight: 400;">以上所有参数均可手工录入。</p>
+<p style="font-weight: 400;">九、   业务报表函数</p>
+
+<table>
+<thead>
+<tr>
+<td width="117">数 据 项</td>
+<td width="337">说          明</td>
+<td width="113">必填项（是/否）</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="117">FOIOJ_AIA</td>
+<td width="337">用于获取所有入库单上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_AIQ</td>
+<td width="337">用于获取所有入库单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_AOA</td>
+<td width="337">用于获取所有出库单上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_AOQ</td>
+<td width="337">用于获取所有出库单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_CIA</td>
+<td width="337">用于获取盘盈入库单上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_CIQ</td>
+<td width="337">用于获取盘盈入库单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_DOA</td>
+<td width="337">用于获取盘亏毁损单上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_DOQ</td>
+<td width="337">用于获取盘亏毁损单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_ GIA</td>
+<td width="337">用于获取产品入库单上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_ GIQ</td>
+<td width="337">用于获取产品入库单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_ MOA</td>
+<td width="337">用于获取生产领料单上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_ MOQ</td>
+<td width="337">用于获取生产领料单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_ OIA</td>
+<td width="337">用于获取其他入库单上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_ OIQ</td>
+<td width="337">用于获取其他入库单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_ OOA</td>
+<td width="337">用于获取其他出库单上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_ OOQ</td>
+<td width="337">用于获取其他出库单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_ PIA</td>
+<td width="337">用于获取外购入库单上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_ PIQ</td>
+<td width="337">用于获取外购入库单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_POA</td>
+<td width="337">用于获取指点定单金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_ POQ</td>
+<td width="337">用于获取指点定单、指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_PVA</td>
+<td width="337">用于获取采购发票上一种或所有物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_PVQ</td>
+<td width="337">用于获取采购发票上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_SOA</td>
+<td width="337">用于获取销售订单上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_SOQ</td>
+<td width="337">用于获取销售订单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_SRA</td>
+<td width="337">用于获取销售发 票上一种或多种物料的折扣。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_SSA</td>
+<td width="337">用于获取销售出库单上一种或多种物料的成本。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_SSQ</td>
+<td width="337">用于获取销售出库单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_STA</td>
+<td width="337">用于获取销售发 票上一种或多种物料的税金。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_SVA</td>
+<td width="337">用于获取销售发 票上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_SVQ</td>
+<td width="337">用于获取销售发 票上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+</tbody>
+</table>
+<p style="font-weight: 400;">　　　　十、业务核算函数</p>
+
+<table style="font-weight: 400;">
+<thead>
+<tr>
+<td width="117">数 据 项</td>
+<td width="337">说          明</td>
+<td width="113">必填项（是/否）</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td width="117">FOIOJ_LFAVGP</td>
+<td width="337">用于获取所有入库单上指定物料的平均单价。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_LFBDIF</td>
+<td width="337">用于获取一种或多种物料的期初差异。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_LFBEGA</td>
+<td width="337">用于获取一种或多种物料的期初金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_LFBEGQ</td>
+<td width="337">用于获取指定物料的期初数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_LFCDIF</td>
+<td width="337">用于获取入库单上一种或多种物料的期初金额借方差异。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_LFDDIF</td>
+<td width="337">用于获取出库单上一种或多种物料的期初金额贷方差异。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_LFINCA</td>
+<td width="337">用于获取入库单上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_LFINCQ</td>
+<td width="337">用于获取入库单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_LFOUTA</td>
+<td width="337">用于获取出库单上一种或多种物料的金额。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_LFOUTQ</td>
+<td width="337">用于获取出库单上指定物料的数量。</td>
+<td width="113">是</td>
+</tr>
+<tr>
+<td width="117">FOIOJ_LFRATE</td>
+<td width="337">用于获取指定物料的成本差异率。</td>
+<td width="113">是</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<p align="center"><b>更多精彩，欢迎关注我们</b></p>
+<p align="center"><a href="http://www.yssun.com"><b>深圳市宇顺企业管理咨询有限公司|专业深圳注册公司代理记账报税</b></a></p>
+<p align="center"><img class="alignnone wp-image-594" src="http://yssun199.gitee.io/yssun/wp-content/uploads/2018/09/ewm.gif" alt="" width="335" height="317" /></p>
+                    </div>
+</pre>
+					
+			
+<!--end 内容 -->
+
+			</div>
+		</div>
+		<div class="lovel">
+			<div class="cate_t">相关阅读</div>
+			<div class="content">
+				<dl>
+					 <dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__974.html" title="金蝶操作教程之五①——报表函数">金蝶操作教程之五①——报表函数</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__976.html" title="金蝶操作教程之五②——现金流量表">金蝶操作教程之五②——现金流量表</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__979.html" title="必看！税前扣除凭证的这几个问题值得注意!!!!">必看！税前扣除凭证的这几个问题值得注意!!!!</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__981.html" title="国务院再出创投企业优惠政策：5年内个人合伙人可自选个税缴纳方式确保税负只减不增">国务院再出创投企业优惠政策：5年内个人合伙人可自选个税缴纳方式确保税负只减不增</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__983.html" title="重点群体创业就业可享税收优惠">重点群体创业就业可享税收优惠</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__985.html" title="干货！适用10%税率的增值税项目都有哪些？">干货！适用10%税率的增值税项目都有哪些？</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__987.html" title="今天起这5种缴纳方式将被严查">今天起这5种缴纳方式将被严查</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__989.html" title="管理者容易犯的11条管理错误">管理者容易犯的11条管理错误</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__991.html" title="企业所得税与增值税的税税差异，你清楚了吗？">企业所得税与增值税的税税差异，你清楚了吗？</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__993.html" title="关于委托银行代扣税款协议签订流程的通知">关于委托银行代扣税款协议签订流程的通知</a></dd>
+
+				</dl>
+			</div>
+		</div>
+		<div class="lover">
+			<div class="cate_t">猜您喜欢</div>
+			<div class="content">
+				<dl>
+					 <dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__702.html" title="个税扣除最新老百姓通俗解读：抓紧结婚，抓紧生娃，抓紧教育，孝敬父母！">个税扣除最新老百姓通俗解读：抓紧结婚，抓紧生娃，抓紧教育，孝敬父母！</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__704.html" title="公司从路边摊买水果没发票，会计小芳这样机智解决！">公司从路边摊买水果没发票，会计小芳这样机智解决！</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__706.html" title="个税专项扣除需发票？子女教育和赡养老人如何凭证？17个问题统一回复！">个税专项扣除需发票？子女教育和赡养老人如何凭证？17个问题统一回复！</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__708.html" title="私户跟私户、私户跟公户之间20万以上划款，将被银行税务监控！">私户跟私户、私户跟公户之间20万以上划款，将被银行税务监控！</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__710.html" title="确定了！人社部重磅通知！不追缴2019年1月1日前社保！">确定了！人社部重磅通知！不追缴2019年1月1日前社保！</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__712.html" title="记者街头采访个税专项附加扣除细则，不能讲得更透了！">记者街头采访个税专项附加扣除细则，不能讲得更透了！</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__714.html" title="长期挂账的“其他应收款”如何平账？老会计怎么处理？">长期挂账的“其他应收款”如何平账？老会计怎么处理？</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__716.html" title="税务师小知识：记住口诀，增值税一点也不难！">税务师小知识：记住口诀，增值税一点也不难！</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__718.html" title="2019年度全国会计专业技术初级资格考试有关问题答记者问">2019年度全国会计专业技术初级资格考试有关问题答记者问</a></dd><dd><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__720.html" title="预征率、税率、征收率？这样记忆分分钟搞定">预征率、税率、征收率？这样记忆分分钟搞定</a></dd>
+
+				</dl>
+			</div>
+		</div>
+		
+				<div class="lover22 subject-biaoqian clearfix w_1200">
+		<ul class="clearfix light-black keysCode">
+		<!--
+						<li>
+							<a href="/cszt/yhs/">印花税</a>
+						</li> -->
+						 <li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__45.html"title="未分类" >未分类</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__60.html"title="顶部菜单" >顶部菜单</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__64.html"title="公司注册" >公司注册</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__66.html"title="代理记账" >代理记账</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__69.html"title="营业执照代办" >营业执照代办</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__71.html"title="一般纳税人申请" >一般纳税人申请</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__74.html"title="深圳全流程网上注册" >深圳全流程网上注册</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__76.html"title="公司注册" >公司注册</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__89.html"title="代理记账" >代理记账</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__91.html"title="一般纳税人申请" >一般纳税人申请</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__93.html"title="营业执照代办" >营业执照代办</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__95.html"title="公司年检" >公司年检</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__97.html"title="逾期年检" >逾期年检</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__100.html"title="整理旧账" >整理旧账</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__102.html"title="财务审计" >财务审计</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__106.html"title="公司年检" >公司年检</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__109.html"title="工商注册" >工商注册</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__112.html"title="公司变更" >公司变更</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__115.html"title="注册 内资公司" >注册 内资公司</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__118.html"title="注册 个体工商户" >注册 个体工商户</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__120.html"title="代理 记账报税" >代理 记账报税</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__124.html"title="注册 外资公司" >注册 外资公司</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__126.html"title="注册 海外公司" >注册 海外公司</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__128.html"title="代理 税收筹划" >代理 税收筹划</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__130.html"title="营业执照办理" >营业执照办理</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__132.html"title="银行开户" >银行开户</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__134.html"title="食品经营许可证" >食品经营许可证</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__136.html"title="前海地址挂靠" >前海地址挂靠</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__138.html"title="年检年报" >年检年报</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__142.html"title="纳税申报" >纳税申报</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__145.html"title="商标注册" >商标注册</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__147.html"title="建筑企业资质" >建筑企业资质</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__150.html"title="股权变更" >股权变更</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__152.html"title="税务异常处理" >税务异常处理</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__154.html"title="工商注册加急" >工商注册加急</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__158.html"title="公司注销流程" >公司注销流程</a></li><li><a href="http://yssun199.gitee.io/yssun/gongshangzhuce/post__160.html"title="外资公司变更股权" >外资公司变更股权</a></li>
+		</ul>
+		
+	</div>
+	
+	
+	
+	</div>
+
+
+</div>
+
+<div class="clear"></div>
+
+<!--  footer  -->
+<div class="footer">
+	<div class="foot">
+		<dl>
+			<dd> <img style="margin-top:20px"  width="169" height="169" src="../templets/yssun/images/ewm.gif"/> </dd><dd><a href="../neizi_zc/200.html">深圳公司注册</a> | </dd>
+			<dd><a href="index.html">代理记账报税  </a> | </dd>
+			<dt><img style="display:none" src="../templets/yssun/images/footer.gif" /></dt>
+			<dd><a href="../index-1.html">创业汇</a> | </dd>
+			<dd><a href="../lianxi/index.html">联系我们</a></dd>
+		</dl>
+		<p><br/></p><p> <img src="http://yssun199.gitee.io/yssun/images/LOGO2.png" width="30" height="30" style="margin-bottom:-8px;float:bottom" />深圳市宇顺企业管理咨询有限公司 <a href="http://www.miitbeian.gov.cn/"><font color="#888  ">粤ICP备18116911号 </font></a></p>
+		<p>公司地址：深圳市南山区玉泉路通海苑北座三单元首层9号(南山国税局正对面)  </p>
+		<p><a href="http://www.yssun.com" target="_blank"><font color="#888">宇顺财务</font></a>创业热线：0755-32861413  13723799805  QQ：494394758</p>
+		<p>合作机构：中国工商银行 中国建设银行 招商银行 中信银行 平安银行</p><p><img src="http://yssun199.gitee.io/yssun/images/icp.gif" /></p>
+		<div class="top"><a href="#"><img style="display:none" src="../templets/yssun/images/top.gif" /></a></div>
+	</div>
+</div>
+
+<!-- WPA Button Begin -->
+<script charset="utf-8" type="text/javascript" src="../templets/yssun/js/tester.js"></script>
+<!-- WPA Button End -->
+
+<!-- WPA Button Begin -->
+<script charset="utf-8" type="text/javascript" src="../templets/yssun/js/tester.js"></script>
+<!-- WPA Button END -->
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+
+</script>
+<!--  footer end  --> 
+
+<script type="text/javascript" charset="utf-8" >$(document).ready(function(){$('#viewDiv_').load('http://yssun199.gitee.io/yssun/ys_footer.html');})</script><div id="viewDiv_"></div><div id="top"></div>
+
+
+</html> <!--  0-->

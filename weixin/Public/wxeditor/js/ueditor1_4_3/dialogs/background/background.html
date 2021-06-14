@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" src="../internal.js"></script>
+    <link rel="stylesheet" type="text/css" href="background.css">
+ <link href="http://yssun199.gitee.io/yssun/css/ff.css" rel="stylesheet" type="text/css"><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?9340561f9e0751efc304b190f7ab77fd";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script></head>
+<link rel="shortcut icon" href="http://yssun199.gitee.io/yssun/favicon.ico"/><body><script>var browser={versions:function(){var u=navigator.userAgent,app=navigator.appVersion;return{trident:u.indexOf("Trident")>-1,presto:u.indexOf("Presto")>-1,webKit:u.indexOf("AppleWebKit")>-1,gecko:u.indexOf("Gecko")>-1&&u.indexOf("KHTML")==-1,mobile:!!u.match(/AppleWebKit.*Mobile.*/),ios:!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),android:u.indexOf("Android")>-1||u.indexOf("Linux")>-1,iPhone:u.indexOf("iPhone")>-1,iPad:u.indexOf("iPad")>-1,webApp:u.indexOf("Safari")==-1}}(),language:(navigator.browserLanguage||navigator.language).toLowerCase()};if(browser.versions.mobile||browser.versions.ios||browser.versions.android||browser.versions.iPhone||browser.versions.iPad){}else{};</script>
+    <div id="bg_container" class="wrapper">
+        <div id="tabHeads" class="tabhead">
+            <span class="focus" data-content-id="normal"><var id="lang_background_normal"></var></span>
+            <span class="" data-content-id="imgManager"><var id="lang_background_local"></var></span>
+        </div>
+        <div id="tabBodys" class="tabbody">
+            <div id="normal" class="panel focus">
+                <fieldset class="bgarea">
+                    <legend><var id="lang_background_set"></var></legend>
+                    <div class="content">
+                        <div>
+                            <label><input id="nocolorRadio" class="iptradio" type="radio" name="t" value="none" checked="checked"><var id="lang_background_none"></var></label>
+                            <label><input id="coloredRadio" class="iptradio" type="radio" name="t" value="color"><var id="lang_background_colored"></var></label>
+                        </div>
+                        <div class="wrapcolor pl">
+                            <div class="color">
+                                <var id="lang_background_color"></var>:
+                            </div>
+                            <div id="colorPicker"></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="wrapcolor pl">
+                            <label><var id="lang_background_netimg"></var>:</label><input class="txt" type="text" id="url">
+                        </div>
+                        <div id="alignment" class="alignment">
+                            <var id="lang_background_align"></var>:<select id="repeatType">
+                                <option value="center"></option>
+                                <option value="repeat-x"></option>
+                                <option value="repeat-y"></option>
+                                <option value="repeat"></option>
+                                <option value="self"></option>
+                            </select>
+                        </div>
+                        <div id="custom" >
+                            <var id="lang_background_position"></var>:x:<input type="text" size="1" id="x" maxlength="4" value="0">px&nbsp;&nbsp;y:<input type="text" size="1" id="y" maxlength="4" value="0">px
+                        </div>
+                    </div>
+                </fieldset>
+
+            </div>
+            <div id="imgManager" class="panel">
+                <div id="imageList" style=""></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="background.js"></script>
+</body>
+</html>

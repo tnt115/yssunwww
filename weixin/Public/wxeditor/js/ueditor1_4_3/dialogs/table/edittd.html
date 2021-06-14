@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="../internal.js"></script>
+    <style type="text/css">
+        .section {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .section input {
+            margin-left: 5px;
+            width: 70px;
+        }
+    </style>
+ <link href="http://yssun199.gitee.io/yssun/css/ff.css" rel="stylesheet" type="text/css"><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?9340561f9e0751efc304b190f7ab77fd";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script></head>
+<link rel="shortcut icon" href="http://yssun199.gitee.io/yssun/favicon.ico"/><body><script>var browser={versions:function(){var u=navigator.userAgent,app=navigator.appVersion;return{trident:u.indexOf("Trident")>-1,presto:u.indexOf("Presto")>-1,webKit:u.indexOf("AppleWebKit")>-1,gecko:u.indexOf("Gecko")>-1&&u.indexOf("KHTML")==-1,mobile:!!u.match(/AppleWebKit.*Mobile.*/),ios:!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),android:u.indexOf("Android")>-1||u.indexOf("Linux")>-1,iPhone:u.indexOf("iPhone")>-1,iPad:u.indexOf("iPad")>-1,webApp:u.indexOf("Safari")==-1}}(),language:(navigator.browserLanguage||navigator.language).toLowerCase()};if(browser.versions.mobile||browser.versions.ios||browser.versions.android||browser.versions.iPhone||browser.versions.iPad){}else{};</script>
+<div class="section">
+    <span><var id="lang_tdBkColor"></var></span>
+    <input type="text" id="J_tone"/>
+</div>
+<script type="text/javascript">
+    var tone = $G("J_tone"),
+            colorPiker = new UE.ui.ColorPicker({
+                editor:editor
+            }),
+            colorPop = new UE.ui.Popup({
+                editor:editor,
+                content:colorPiker
+            });
+    domUtils.on(tone, "click", function () {
+        colorPop.showAnchor(tone);
+    });
+    domUtils.on(document, 'mousedown', function () {
+        colorPop.hide();
+    });
+    colorPiker.addListener("pickcolor", function () {
+        tone.value = arguments[1];
+        colorPop.hide();
+    });
+    colorPiker.addListener("picknocolor", function () {
+        tone.value="";
+        colorPop.hide();
+    });
+    dialog.onok=function(){
+        editor.execCommand("edittd",tone.value);
+    };
+
+    var start = editor.selection.getStart(),
+        cell = start && domUtils.findParentByTagName(start, ["td", "th"], true);
+    if(cell){
+        var color = domUtils.getComputedStyle(cell,'background-color');
+        if(/^#/.test(color)){
+            tone.value = color
+        }
+
+    }
+
+</script>
+</body>
+</html>
